@@ -6,6 +6,6 @@ FROM node:18
 COPY package*.json ./
 RUN npm install
 # Add your source files
-COPY ..
+COPY . .
 EXPOSE 2087
 CMD [“npm”, “start”]
