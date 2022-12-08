@@ -7,3 +7,7 @@ const app = Express();
 app.get('/hello', (req, res) => {
     res.send('hello world');
 })
+
+app.listen(8080, () => {
+    console.log("Listening at 8080 port")
+})
